@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/script.js" defer></script>
+</head>
+<body>
+    <!--Left side, calculator-->
+    <div class="wrapper" id="left-calculator">
+    <!--Label for calculations-->
+        <p id="result-label">0</p>
+        <!--Input field-->
+        <div class="container" style="margin-bottom: 5px;" >
+            <p class="paragraph-result" id="input-calculation">0</p>
+        </div>
+        <!-- First ROW -->
+        <div class="container">
+            <div class="one bg-same" id="modul"><p class="number-centered">%</p></div>
+            <div class="two bg-same" id="devide"><p class="number-centered">/</p></div>
+            <div class="three bg-same" id="clear"><p class="number-centered">CE</p></div>
+            <div class="four" id="delete"><p class="number-centered">DELETE</p></div>
+        </div>
+        <!-- Second ROW -->
+        <div class="container">
+            <div class="one" id="7"><p class="number-centered">7</p></div>
+            <div class="two" id="8"><p class="number-centered">8</p></div>
+            <div class="three" id="9"><p class="number-centered">9</p></div>
+            <div class="four" id="multiply"><p class="number-centered">X</p></div>
+        </div>
+        <!-- Third ROW -->
+        <div class="container">
+            <div class="one" id="4"><p class="number-centered">4</p></div>
+            <div class="two" id="5"><p class="number-centered">5</p></div>
+            <div class="three" id="6"><p class="number-centered">6</p></div>
+            <div class="four" id="minus"><p class="number-centered">-</p></div>
+        </div>
+        <!-- Forth ROW -->
+        <div class="container">
+            <div class="one" id="1"><p class="number-centered">1</p></div>
+            <div class="two" id="2"><p class="number-centered">2</p></div>
+            <div class="three" id="3"><p class="number-centered">3</p></div>
+            <div class="four" id="plus"><p class="number-centered">+</p></div>
+        </div>
+        <!-- Fifth ROW -->
+        <div class="container">
+            <div class="one" id="plus-or-minus"><p class="number-centered">+/-</p></div>
+            <div class="two" id="0"><p class="number-centered">0</p></div>
+            <div class="three" id="tocka"><p class="number-centered">.</p></div>
+            <div class="four" id="equal"><p class="number-centered">=</p></div>
+        </div>     
+    </div>
+    <!--Right div - History of calculations-->
+    <div  id='right-history'>
+        <div class="border-bottom">History</div> <!--Fixed text history at the top-->
+        <div id="his-board"></div>  <!--Where we are appending our history calculations-->
+    </div>         
+</body>
+</html>
