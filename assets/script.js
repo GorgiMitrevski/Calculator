@@ -218,7 +218,7 @@ class History { // for adding history of calculations in history tab
         this.hisBoard.appendChild(paragraphCalculations);
         this.hisBoard.appendChild(paragraphResult);
     }
-    historyMedia(){ // where we are checking width of our pagee
+    historyMedia(){ // where we are checking width of our page
         const x = window.matchMedia("(max-width: 700px)");
         this.checkWidth(x);
         x.addListener(this.checkWidth);
